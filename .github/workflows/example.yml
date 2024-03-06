@@ -1,0 +1,13 @@
+name: example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  product:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sudo dmesg
